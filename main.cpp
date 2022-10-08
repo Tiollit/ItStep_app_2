@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+
     //----------------Пред-перевірки--------------
     /*int size;
     cout << "=>";
@@ -42,3 +43,4 @@ int main()
     }
     cout << endl;
     return 0;
+}
