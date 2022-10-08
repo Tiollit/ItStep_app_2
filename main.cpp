@@ -2,43 +2,13 @@
 using namespace std;
 int main()
 {
-    //----------------Пред-перевірки--------------
-    /*int size;
-    cout << "=>";
-    cin >> size;
-    int i = size;*/
-    /*while(i < 10)
+    long long a, b = 1;
+    cout << "Incert random number from 1 to 20 include:" << endl;
+    cin >> a;
+    for (long long i = a; i <= 20; i++)
     {
-        cout << "* ";
-        i++;
-    }*/
-    //----------------Пост-перевірки---------------
-    //int age;
-    ////
-    //do
-    //{
-    //  system("cls");
-    //  cout << "Enter your age: ";
-    //  cin >> age;
-    //  /*if (age >= 18)
-    //  {
-    //      cout << "Sucsses!" << endl;
-    //      system("pause");
-    //      break;
-    //  }
-    //  else
-    //  {
-    //      cout << "Error! Incorect age: Your age must be more 18+" << endl;
-    //      system("pause");
-    //  }*/
-    //  
-    //} while (age < 18);
-    //system("cls");
-    //cout << "Exit..." << endl;
-    //----------------Пошаговий---------------
-    for (int i = 0; i < 10; i += 3)
-    {
-        cout << i << "\t";
+        b = i * b;
     }
-    cout << endl;
+    cout << "The product is: " << b << endl;
     return 0;
+}
