@@ -2,43 +2,12 @@
 using namespace std;
 int main()
 {
-    //----------------Пред-перевірки--------------
-    /*int size;
-    cout << "=>";
-    cin >> size;
-    int i = size;*/
-    /*while(i < 10)
+    int a = 0, b;
+    for (int i = 0; i <= 1000; i++)
     {
-        cout << "* ";
-        i++;
-    }*/
-    //----------------Пост-перевірки---------------
-    //int age;
-    ////
-    //do
-    //{
-    //  system("cls");
-    //  cout << "Enter your age: ";
-    //  cin >> age;
-    //  /*if (age >= 18)
-    //  {
-    //      cout << "Sucsses!" << endl;
-    //      system("pause");
-    //      break;
-    //  }
-    //  else
-    //  {
-    //      cout << "Error! Incorect age: Your age must be more 18+" << endl;
-    //      system("pause");
-    //  }*/
-    //  
-    //} while (age < 18);
-    //system("cls");
-    //cout << "Exit..." << endl;
-    //----------------Пошаговий---------------
-    for (int i = 0; i < 10; i += 3)
-    {
-        cout << i << "\t";
+        a = a + i;
     }
-    cout << endl;
+    b = a / 1001;
+    cout << "Arithmetic mean for numbers from 0 to 1000 is: " << b << endl;
     return 0;
+}
