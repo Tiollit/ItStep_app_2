@@ -1,44 +1,28 @@
-#include <iostream>
+#include <iostream> //Користувач вводить будь-яке ціле число А. Необхідно вивести всі цілі числа В, для яких А ділиться без залишку на В* В і не ділиться без залишку на В* В* В
+#include <cmath>
 using namespace std;
 int main()
 {
-    //----------------Пред-перевірки--------------
-    /*int size;
-    cout << "=>";
-    cin >> size;
-    int i = size;*/
-    /*while(i < 10)
+    int a, b;
+    double c, d;
+    cout << "Incern number:" << endl;
+    cin >> a;
+    cout << "First line of numbers: " << endl;
+    for (int i = 1; i < a; i++)
     {
-        cout << "* ";
-        i++;
-    }*/
-    //----------------Пост-перевірки---------------
-    //int age;
-    ////
-    //do
-    //{
-    //  system("cls");
-    //  cout << "Enter your age: ";
-    //  cin >> age;
-    //  /*if (age >= 18)
-    //  {
-    //      cout << "Sucsses!" << endl;
-    //      system("pause");
-    //      break;
-    //  }
-    //  else
-    //  {
-    //      cout << "Error! Incorect age: Your age must be more 18+" << endl;
-    //      system("pause");
-    //  }*/
-    //  
-    //} while (age < 18);
-    //system("cls");
-    //cout << "Exit..." << endl;
-    //----------------Пошаговий---------------
-    for (int i = 0; i < 10; i += 3)
-    {
-        cout << i << "\t";
+        b = a / (pow(i,2));
+        c = a / (pow(i,2));
+        d = c - b;
+        if (d == 0) cout << i << " ";        
     }
     cout << endl;
+    cout << "Second line of numbers: " << endl;
+    for (int i = 1; i < a; i++)
+    {
+        b = a / (pow(i,3));
+        c = a / (pow(i,3));
+        d = c - b;
+        if (d > 0) cout << i << " ";
+    }
     return 0;
+}
